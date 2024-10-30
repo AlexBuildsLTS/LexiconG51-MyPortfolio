@@ -1,19 +1,23 @@
-/* Custom Styles */
-#hero {
-    background: #dc3545; /* Red background color */
-    color: white;
-    padding: 100px 0;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.progress-bar {
-    background-color: #007bff; /* Adjust colors to fit */
+header {
+    background-color: #dc3545;
 }
 
 footer {
-    background-color: #343a40; /* Dark footer */
-    color: white;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
 }
 
-footer a:hover {
-    color: #adb5bd; /* Light hover color */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
