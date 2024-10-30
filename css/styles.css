@@ -1,0 +1,19 @@
+/* Custom Styles */
+#hero {
+    background: #dc3545; /* Red background color */
+    color: white;
+    padding: 100px 0;
+}
+
+.progress-bar {
+    background-color: #007bff; /* Adjust colors to fit */
+}
+
+footer {
+    background-color: #343a40; /* Dark footer */
+    color: white;
+}
+
+footer a:hover {
+    color: #adb5bd; /* Light hover color */
+}
