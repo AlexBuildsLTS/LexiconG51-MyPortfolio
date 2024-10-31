@@ -1,19 +1,50 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #1e2130; /* Dark blue background for the entire body */
+    color: #ffffff; /* White text for better contrast */
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #dc3545;
+/* Navbar Styling */
+.navbar {
+    background-color: #161b22; /* Darker navbar background */
 }
 
-footer {
-    background-color: #343a40;
+.navbar-brand, .navbar-nav .nav-link {
+    color: #c9d1d9 !important; /* Light grey text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important; /* White on hover */
+}
+
+/* Header Section */
+.hero-section {
+    background: linear-gradient(180deg, #161b22, #0d1117); /* Smooth gradient from dark to darker */
     color: #ffffff;
-    padding: 20px 0;
+    padding: 60px 0;
+    text-align: center;
 }
 
+/* About, Skills, Experience, Education, and Projects Sections */
+section {
+    background-color: #1e2130; /* Slightly lighter dark blue for main sections */
+    color: #ffffff; /* White text */
+    padding: 50px 0;
+}
+
+/* Specific adjustments for the header section */
+header.hero-section {
+    background-color: #161b22; 
+}
+
+/* Card Styling */
 .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #161b22; 
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card-img-top {
@@ -21,10 +52,124 @@ footer {
     height: 200px;
     object-fit: cover;
 }
-.navbar .nav-link img {
-    transition: transform 0.3s ease;
+
+/* Progress Bar Styling */
+.progress {
+    background-color: #ffffff; 
+    height: 20px;
+    border-radius: 10px;
 }
 
-.navbar .nav-link img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+.progress-bar {
+    background-color: #4caf50; 
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4caf50; 
+}
+
+/* Navbar Icon Styling */
+.navbar .nav-link img.social-icon {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(80%);
+}
+
+.navbar .nav-link img.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #4caf50; 
+    border-color: #4caf50; 
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+/* Form Field Styling */
+.form-control {
+    background-color: #2a2d3e;
+    color: #ffffff;
+    border: 1px solid #444a63;
+}
+
+.form-control:focus {
+    background-color: #33364a;
+    border-color: #4caf50; 
+    color: #ffffff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #161b22; 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .d-flex {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        margin: 0 10px;
+    }
+    
+.hero-section, #about, #education, #skills, #experience, #projects, #contact {
+    background-color: #1e2130 !important; 
+    color: #ffffff !important; 
+}
+
+
+.hero-section {
+    background: linear-gradient(180deg, #161b22, #0d1117) !important;
+}
+
+
+.progress {
+    background-color: #ffffff !important; 
+}
+
+.progress-bar {
+    background-color: #4caf50 !important; 
+    color: #ffffff !important; 
+}
+
+
+footer {
+    background-color: #161b22 !important;
+    color: #ffffff !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+
+p, ul, li {
+    color: #ffffff !important;
+}
+
 }
