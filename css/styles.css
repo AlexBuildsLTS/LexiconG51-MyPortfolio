@@ -37,12 +37,12 @@ section {
 
 /* Specific adjustments for the header section */
 header.hero-section {
-    background-color: #161b22; 
+    background-color: #161b22; /* Dark blue background */
 }
 
 /* Card Styling */
 .card {
-    background-color: #161b22; 
+    background-color: #161b22; /* Card color slightly lighter */
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -55,13 +55,13 @@ header.hero-section {
 
 /* Progress Bar Styling */
 .progress {
-    background-color: #ffffff; 
+    background-color: #ffffff; /* White for unfilled portion */
     height: 20px;
     border-radius: 10px;
 }
 
 .progress-bar {
-    background-color: #4caf50; 
+    background-color: #4caf50; /* Green filled portion */
     color: #ffffff;
     border-radius: 10px;
     font-weight: bold;
@@ -69,11 +69,11 @@ header.hero-section {
 
 /* Profile Picture Styling */
 .profile-picture {
-    width: 150px; 
+    width: 150px; /* Smaller profile image */
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #4caf50; 
+    border: 3px solid #4caf50; /* Optional: add a green border */
 }
 
 /* Navbar Icon Styling */
@@ -91,8 +91,8 @@ header.hero-section {
 
 /* Button Styling */
 .btn-primary {
-    background-color: #4caf50; 
-    border-color: #4caf50; 
+    background-color: #4caf50; /* Green background */
+    border-color: #4caf50; /* Green border */
 }
 
 .btn-primary:hover {
@@ -109,19 +109,19 @@ header.hero-section {
 
 .form-control:focus {
     background-color: #33364a;
-    border-color: #4caf50; 
+    border-color: #4caf50; /* Green border on focus */
     color: #ffffff;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #161b22; 
+    background-color: #161b22; /* Consistent dark blue background */
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
 
-
+/* Responsive Adjustments */
 @media (max-width: 991.98px) {
     .navbar-nav {
         text-align: center;
@@ -135,41 +135,85 @@ footer {
     .social-icon {
         margin: 0 10px;
     }
-    
-.hero-section, #about, #education, #skills, #experience, #projects, #contact {
-    background-color: #1e2130 !important; 
-    color: #ffffff !important; 
 }
 
+    
+/* Ensure all sections have the dark blue background */
+.hero-section, #about, #education, #skills, #experience, #projects, #contact {
+    background-color: #1e2130 !important; /* Force dark blue background */
+    color: #ffffff !important; /* Force white text */
+}
 
+/* Ensure header has the gradient */
 .hero-section {
     background: linear-gradient(180deg, #161b22, #0d1117) !important;
 }
 
-
+/* Ensure progress bars have green fill and white background */
 .progress {
-    background-color: #ffffff !important; 
+    background-color: #ffffff !important; /* White for unfilled portion */
 }
 
 .progress-bar {
-    background-color: #4caf50 !important; 
-    color: #ffffff !important; 
+    background-color: #4caf50 !important; /* Green filled portion */
+    color: #ffffff !important; /* White text on progress bar */
 }
 
-
+/* Ensure footer has consistent dark background */
 footer {
     background-color: #161b22 !important;
     color: #ffffff !important;
 }
 
-
+/* Ensure all headings are white */
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff !important;
 }
 
-
+/* Ensure all paragraphs have white text */
 p, ul, li {
     color: #ffffff !important;
 }
+/* Project Section Styling */
+#projects {
+    background-color: #2a2d3e; /* Dark background for project section */
+}
 
+/* Project Card Styling */
+.project-card {
+    background-color: #33374a; /* Slightly lighter dark color for cards */
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Project Icon Styling */
+.project-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px; /* Center and space below icon */
+    display: block;
+}
+
+/* Centering Card Title and Button */
+.project-card .card-title {
+    color: #ffffff;
+}
+
+.project-card .btn-primary {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.project-card .btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
 }
