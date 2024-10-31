@@ -1,0 +1,153 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e2130, #14171e); /* Darker gradient */
+    color: #ffffff; /* All text in white */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #161b22; /* Darker navbar */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #c9d1d9 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #1e2130; /* Dark background */
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Section Background and Text Colors */
+section {
+    background-color: #1e2130; /* Dark background for all sections */
+    color: #ffffff; /* White text */
+    padding: 50px 0;
+}
+
+/* Title Styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* White color for titles */
+    font-weight: bold; /* Bold titles */
+}
+
+h2 {
+    font-size: 1.8em; /* Slightly larger for h2 */
+}
+
+h3 {
+    font-size: 1.5em; /* Slightly larger for h3 */
+}
+
+/* Card Styling */
+.card {
+    background-color: #161b22; /* Dark card background */
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image Styling */
+.project-card img {
+    width: 100%; /* Keep the width at 100% to fit the card */
+    height: 100px; /* Reduce height to a smaller size */
+    object-fit: contain; /* Ensure the whole image is visible within its container */
+    border-radius: 8px; /* Round the corners slightly */
+    margin: 0 auto; /* Center the image */
+}
+
+
+/* Progress Bar Styling */
+.progress {
+    background-color: #2a2d3e; /* Subtle, slightly lighter dark to blend in */
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: #4caf50; /* Green filled portion */
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4caf50; /* Green border */
+}
+
+/* Navbar Icon Styling */
+.navbar .nav-link img.social-icon {
+    width: 25px;
+    height: 25px;
+    filter: brightness(80%); /* Slight dim for consistency */
+}
+
+.navbar .nav-link img.social-icon:hover {
+    filter: brightness(100%); /* Brighten on hover */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #4caf50; /* Green button background */
+    border-color: #4caf50;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+/* Project Section Styling */
+#projects {
+    background-color: #2a2d3e; /* Slightly lighter dark for contrast */
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: #33374a; /* Dark card background */
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #161b22; /* Dark footer */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Ensure all text elements are white */
+body, p, h1, h2, h3, h4, h5, h6, li, a {
+    color: #ffffff !important; /* Force all text to remain white */
+}
