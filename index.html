@@ -1,173 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- Bootstrap Icons -->
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <!-- Toggler for mobile view -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar Links and Icons -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Left-aligned menu items -->
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-                <!-- Right-aligned social icons -->
-                <div class="d-flex">
-                    <a href="https://github.com/AlexBuildsLTS" target="_blank" class="nav-link p-0 me-3">
-                        <img src="images/git.png" alt="GitHub" class="social-icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/alex-youssef-02512a335/" target="_blank" class="nav-link p-0">
-                        <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4">Welcome to My Portfolio</h1>
-            <p class="lead">Showcasing my work and projects</p>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container text-center">
-            <img src="images/image.png" alt="Profile Image" class="rounded-circle mb-4 profile-picture">
-            <h2>About Me</h2>
-            <p class="text-muted">Hello! I'm Alex Youssef, a dedicated Java Fullstack Developer in training at Lexicon. My passion for IT and programming led me to pursue Java as my first programming language due to the vast opportunities it provides.</p>
-            <p class="text-muted">Since June 2024, I have been fully immersed in my studies, developing a robust foundation in both front-end and back-end technologies, including:</p>
-            <ul class="list-unstyled">
-                <li><strong>Java and Spring Framework</strong>: Building scalable and robust web applications.</li>
-                <li><strong>HTML, CSS, and JavaScript</strong>: Creating responsive user interfaces for an enhanced user experience.</li>
-                <li><strong>Database Management</strong>: Utilizing SQL and NoSQL databases for effective data handling.</li>
-                <li><strong>RESTful API Development</strong>: Implementing APIs to facilitate communication between front-end and back-end systems.</li>
-                <li><strong>Version Control Systems</strong>: Collaborating using Git and GitHub for project management.</li>
-            </ul>
-            <p class="text-muted">I am excited to apply my skills in real-world projects and continually seek opportunities to learn and grow in the dynamic field of technology.</p>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Education</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Lexicon</h5>
-                    <p class="text-muted">Java Fullstack Developer | June 2024 - Present</p>
-                    <p>I am currently pursuing a full-time education as a Java Fullstack Developer, focusing on developing both front-end and back-end skills. My training includes:</p>
-                    <ul>
-                        <li>Java and Spring Framework for building scalable web applications.</li>
-                        <li>HTML, CSS, and JavaScript for crafting responsive user interfaces.</li>
-                        <li>Database management with SQL and NoSQL systems.</li>
-                        <li>RESTful API development for seamless integration of web services.</li>
-                        <li>Utilizing version control systems like Git and GitHub for collaboration.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Programming Languages</h5>
-                    <div class="progress mb-3">
-                        <div class="progress-bar" role="progressbar" style="width: 80%;">Java</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;">JavaScript</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h5>Web Development</h5>
-                    <div class="progress mb-3">
-                        <div class="progress-bar" role="progressbar" style="width: 90%;">HTML/CSS</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar" role="progressbar" style="width: 80%;">Bootstrap</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h5>Tools & Technologies</h5>
-                    <div class="progress mb-3">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;">Spring Boot</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;">SQL</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Work Experience</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Bröd och Salt</h5>
-                    <p class="text-muted">Work Leader | 2022–2023</p>
-                    <p>In my role as a Work Leader, I was responsible for coordinating and preparing catering orders during the night shift. My duties included:</p>
-                    <ul>
-                        <li>Overseeing inventory management to ensure all orders were filled accurately.</li>
-                        <li>Streamlining operations to enhance delivery efficiency and customer satisfaction.</li>
-                        <li>Training team members to maintain high standards in food preparation and service.</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>GRF Redovisning</h5>
-                    <p class="text-muted">IT Support | 2018–2022</p>
-                    <p>During my time at GRF Redovisning, I provided comprehensive IT support with responsibilities that included:</p>
-                    <ul>
-                        <li>Managing IT systems to ensure smooth operations and minimal downtime.</li>
-                        <li>Troubleshooting technical issues and providing solutions to improve productivity.</li>
-                        <li>Implementing best practices in IT management to enhance service delivery.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-<section id="projects" class="py-5 bg-dark">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <h2 class="text-center mb-4 text-white">Projects</h2>
-        <div class="row text-center">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Left Aligned Links -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <!-- Right Aligned Social Icons -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/alex-youssef-02512a335/" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn" style="width: 25px; height: 25px;" class="social-icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/AlexBuildsLTS" target="_blank">
+                        <img src="images/git.png" alt="GitHub" style="width: 25px; height: 25px;" class="social-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to My Portfolio</h1>
+        <p class="lead">Showcasing my work and projects</p>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container text-center">
+        <img src="images/image.png" alt="Profile Image" class="profile-picture mb-4">
+        <h2>About Me</h2>
+        <p>Hello! I'm Alex Youssef, a dedicated Java Fullstack Developer in training at Lexicon. My passion for IT
+            and programming led me to pursue Java as my first programming language due to the vast opportunities it
+            provides.</p>
+        <p>Since June 2024, I have been fully immersed in my studies, developing a robust foundation in both
+            front-end and back-end technologies, including:</p>
+        <ul class="list-unstyled">
+            <li><strong>Java and Spring Framework</strong>: Building scalable and robust web applications.</li>
+            <li><strong>HTML, CSS, and JavaScript</strong>: Creating responsive user interfaces for an enhanced user
+                experience.</li>
+            <li><strong>Database Management</strong>: Utilizing SQL and NoSQL databases for effective data
+                handling.</li>
+            <li><strong>RESTful API Development</strong>: Implementing APIs to facilitate communication between
+                front-end and back-end systems.</li>
+            <li><strong>Version Control Systems</strong>: Collaborating using Git and GitHub for project
+                management.</li>
+        </ul>
+        <p>I am excited to apply my skills in real-world projects and continually seek opportunities to learn and
+            grow in the dynamic field of technology.</p>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Lexicon</h5>
+                <p>Java Fullstack Developer | June 2024 - Present</p>
+                <p>I am currently pursuing a full-time education as a Java Fullstack Developer, focusing on
+                    developing both front-end and back-end skills. My training includes:</p>
+                <ul>
+                    <li>Java and Spring Framework for building scalable web applications.</li>
+                    <li>HTML, CSS, and JavaScript for crafting responsive user interfaces.</li>
+                    <li>Database management with SQL and NoSQL systems.</li>
+                    <li>RESTful API development for seamless integration of web services.</li>
+                    <li>Utilizing version control systems like Git and GitHub for collaboration.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Programming Languages</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 80%;">Java</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 70%;">JavaScript</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Web Development</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 90%;">HTML/CSS</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 80%;">Bootstrap</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Tools & Technologies</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 85%;">Spring Boot</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 60%;">SQL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Work Experience</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Bröd och Salt</h5>
+                <p>Work Leader | 2022–2023</p>
+                <p>In my role as a Work Leader, I was responsible for coordinating and preparing catering orders
+                    during the night shift. My duties included:</p>
+                <ul>
+                    <li>Overseeing inventory management to ensure all orders were filled accurately.</li>
+                    <li>Streamlining operations to enhance delivery efficiency and customer satisfaction.</li>
+                    <li>Training team members to maintain high standards in food preparation and service.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>GRF Redovisning</h5>
+                <p>IT Support | 2018–2022</p>
+                <p>During my time at GRF Redovisning, I provided comprehensive IT support with responsibilities that
+                    included:</p>
+                <ul>
+                    <li>Managing IT systems to ensure smooth operations and minimal downtime.</li>
+                    <li>Troubleshooting technical issues and providing solutions to improve productivity.</li>
+                    <li>Implementing best practices in IT management to enhance service delivery.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
             <!-- Project 1 -->
             <div class="col-md-3">
                 <div class="card project-card">
-                    <img src="images/image copy.png" class="project-icon" alt="Project Icon">
-                    <div class="card-body">
-                        <h5 class="card-title text-white">Project 1</h5>
+                    <img src="images/image copy.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project 1</h5>
                         <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
@@ -175,9 +185,9 @@
             <!-- Project 2 -->
             <div class="col-md-3">
                 <div class="card project-card">
-                    <img src="images/image copy.png" class="project-icon" alt="Project Icon">
-                    <div class="card-body">
-                        <h5 class="card-title text-white">Project 2</h5>
+                    <img src="images/image copy.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project 2</h5>
                         <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
@@ -185,9 +195,9 @@
             <!-- Project 3 -->
             <div class="col-md-3">
                 <div class="card project-card">
-                    <img src="images/image copy.png" class="project-icon" alt="Project Icon">
-                    <div class="card-body">
-                        <h5 class="card-title text-white">Project 3</h5>
+                    <img src="images/image copy.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project 3</h5>
                         <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
@@ -195,9 +205,9 @@
             <!-- Project 4 -->
             <div class="col-md-3">
                 <div class="card project-card">
-                    <img src="images/image copy.png" class="project-icon" alt="Project Icon">
-                    <div class="card-body">
-                        <h5 class="card-title text-white">Project 4</h5>
+                    <img src="images/image copy.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project 4</h5>
                         <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
@@ -206,46 +216,46 @@
     </div>
 </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
-            <form onsubmit="submitForm(event)">
-                <div class="mb-3">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" required>
-                </div>
-                <div class="mb-3">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form onsubmit="submitForm(event)">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-dark text-white text-center">
-        <div class="container">
-            <p>&copy; 2024 Alex Youssef. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+        <p>&copy; 2024 Alex Youssef. All rights reserved.</p>
+    </div>
+</footer>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
+
 </html>
