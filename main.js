@@ -8,13 +8,21 @@ function submitForm(event) {
     const phone = document.getElementById("phone").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Display alert message
-    alert(`Thank you for reaching out, ${firstName} ${lastName}! Your message has been sent to Alex Youssef. I will get back to you at ${email}. You can also reach me directly at alex.youssef@live.com.`);
+    
+    const templateParams = {
+        from_name: `${firstName} ${lastName}`,
+        email: email,
+        phone: phone,
+        message: message,
+    };
 
-    // Reset the form fields after submission
-    document.getElementById("firstName").value = "";
-    document.getElementById("lastName").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("phone").value = "";
-    document.getElementById("message").value = "";
+    
+    emailjs.send("service_bc8cdnr", "ejs-test-mail-service", templateParams)
+        .then(response => {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Your message has been sent successfully!");
+        }, error => {
+            console.log("FAILED...", error);
+            alert("There was an error sending your message. Please try again.");
+        });
 }
