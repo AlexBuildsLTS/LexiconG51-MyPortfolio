@@ -35,6 +35,10 @@ section {
     padding: 50px 0;
 }
 
+.bg-dark {
+    background-color: #1e2130 !important;
+}
+
 /* Title Styling */
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff; /* White color for titles */
@@ -42,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 1.8em; /* Slightly larger for h2 */
+    font-size: 2em; /* Slightly larger for h2 */
 }
 
 h3 {
@@ -54,17 +58,17 @@ h3 {
     background-color: #161b22; /* Dark card background */
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
 /* Project Image Styling */
 .project-card img {
     width: 100%; /* Keep the width at 100% to fit the card */
-    height: 100px; /* Reduce height to a smaller size */
-    object-fit: contain; /* Ensure the whole image is visible within its container */
-    border-radius: 8px; /* Round the corners slightly */
-    margin: 0 auto; /* Center the image */
+    height: auto; /* Allow height to adjust automatically */
+    object-fit: cover; /* Ensure the whole image is visible within its container */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
-
 
 /* Progress Bar Styling */
 .progress {
@@ -74,7 +78,7 @@ h3 {
 }
 
 .progress-bar {
-    background-color: #4caf50; /* Green filled portion */
+    background-color: #4caf50; /* Default green filled portion */
     color: #ffffff;
     border-radius: 10px;
     font-weight: bold;
@@ -82,11 +86,13 @@ h3 {
 
 /* Profile Picture Styling */
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #4caf50; /* Green border */
+    border: 3px solid #4caf50;
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
 }
 
 /* Navbar Icon Styling */
@@ -112,31 +118,55 @@ h3 {
     border-color: #45a049;
 }
 
-/* Project Section Styling */
-#projects {
-    background-color: #2a2d3e; /* Slightly lighter dark for contrast */
+.btn-secondary {
+    background-color: #555555; /* Darker secondary button */
+    border-color: #555555;
+    color: #ffffff;
 }
 
-/* Project Card Styling */
-.project-card {
-    background-color: #33374a; /* Dark card background */
-    border: none;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.btn-secondary:hover {
+    background-color: #444444;
+    border-color: #444444;
+}
+
+/* General Styling for Cards */
+.project-card, .blog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all content */
+    justify-content: space-between;
+    background-color: #161b22; /* Dark card background */
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    transition: transform 0.3s;
+    padding: 15px; /* Add padding for spacing */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
+/* Project and Blog Image Styling */
+.project-card img, .blog-card img {
+    width: 120px; /* Fixed width for consistency */
+    height: 120px; /* Fixed height for consistency */
+    object-fit: contain; /* Keeps the entire image visible without cropping */
+    border-radius: 8px; /* Optional rounded corners */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Project Card Hover Effect */
+.project-card:hover, .blog-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.project-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 15px;
-    display: block;
+/* Center Text Content in Cards */
+.project-card .card-body, .blog-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Footer Styling */
@@ -150,4 +180,24 @@ footer {
 /* Ensure all text elements are white */
 body, p, h1, h2, h3, h4, h5, h6, li, a {
     color: #ffffff !important; /* Force all text to remain white */
+}
+
+/* Additional Styling for Modal Content */
+.modal-content.bg-dark {
+    background-color: #1e2130;
+    color: #ffffff;
+}
+
+.modal-header, .modal-footer {
+    border-bottom: none;
+    border-top: none;
+}
+
+.modal-header h5 {
+    margin: 0;
+}
+
+.modal-body img {
+    max-height: 200px; /* Reduced max height */
+    object-fit: cover;
 }

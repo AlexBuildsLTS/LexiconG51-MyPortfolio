@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the Latest Java Features You Shouldn't Miss</title>
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Alex Youssef</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Left Aligned Links -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                </ul>
+                <!-- Right Aligned Social Icons -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/alex-youssef-02512a335/" target="_blank">
+                            <img src="../images/linkedin.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/AlexBuildsLTS" target="_blank">
+                            <img src="../images/git.png" alt="GitHub" class="social-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Section -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="mb-4">Exploring the Latest Java Features You Shouldn't Miss</h1>
+            <p class="text-muted">By Alex Youssef | November 10, 2024</p>
+            <img src="../images/blog-new-java-features.png" alt="New Java Features" class="img-fluid mb-4" loading="lazy">
+            <p>
+                Java continues to evolve, introducing features that enhance developer productivity, performance, and language expressiveness. In this post, we'll explore some of the standout new features in the latest Java releases that you won't want to miss.
+            </p>
+
+            <h2>1. Record Classes Enhancements</h2>
+            <p>
+                Records in Java provide a compact syntax for declaring classes that are transparent holders for shallowly immutable data. Recent enhancements have made records even more powerful by allowing them to implement interfaces and include static methods, thereby increasing their flexibility and utility in various applications.
+            </p>
+
+            <h2>2. Pattern Matching for instanceof</h2>
+            <p>
+                Pattern matching simplifies the common practice of casting an object after checking its type using the `instanceof` operator. With this feature, you can both check the type and cast the object in a single, concise expression, reducing boilerplate code and improving readability.
+            </p>
+
+            <h2>3. Sealed Classes</h2>
+            <p>
+                Sealed classes restrict which other classes or interfaces may extend or implement them. This feature provides a more controlled inheritance model, allowing developers to define a closed hierarchy of classes, which is particularly useful for modeling finite states or restricted type systems.
+            </p>
+
+            <h2>4. Text Blocks</h2>
+            <p>
+                Text blocks offer a more readable and maintainable way to handle multi-line string literals. By preserving the formatting and reducing the need for escape sequences, text blocks make it easier to work with large blocks of text, such as JSON, XML, or SQL queries, directly within Java code.
+            </p>
+
+            <h2>5. Project Loom: Virtual Threads</h2>
+            <p>
+                Project Loom introduces virtual threads to Java, which aim to dramatically reduce the effort of writing, maintaining, and observing high-throughput concurrent applications. Virtual threads are lightweight threads that can scale to millions, providing a more efficient concurrency model compared to traditional platform threads.
+            </p>
+
+            <h2>6. Project Panama: Foreign Function & Memory API</h2>
+            <p>
+                Project Panama facilitates the connection between Java applications and native APIs, allowing Java programs to interoperate with code written in other languages like C and C++. The Foreign Function & Memory API simplifies and accelerates the process of calling native libraries and handling native memory, bridging the gap between Java and low-level system operations.
+            </p>
+
+            <h2>Conclusion</h2>
+            <p>
+                The continuous advancements in Java ensure that it remains a robust and versatile language for modern software development. By embracing these new features, developers can write more concise, efficient, and maintainable code, staying ahead in the ever-evolving tech landscape.
+            </p>
+            <p>
+                Stay tuned for more insights and tutorials on Java and fullstack development!
+            </p>
+            <a href="../index.html#blog" class="btn btn-primary mt-3">Back to Blog</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2024 Alex Youssef. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
